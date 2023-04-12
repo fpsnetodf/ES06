@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03 - Novos métodos para strings</title>
+</head>
+<body>
+    <h1>03 - Novos métodos para strings - endsWith</h1>
+    <h2>método - repeat</h2>
+    <p id="test"></p>
+
+    <h2>método includes</h2>
+    <p id="include">verifica se um palavra esta incluso na frase</p>
+
+    <script>
+        let text = 'Lorem ipsum dolor sit amet'
+        console.log(text.endsWith('ame', 25))
+        document.querySelector("#test").innerHTML = 'lol - '.repeat(15)
+
+        console.log('verica se a palavra "incluso" esta na frase: ', document.querySelector('#include').textContent.includes('incluso'))
+    </script>
+</body>
+</html>

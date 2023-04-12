@@ -1,0 +1,2 @@
+<h1>um simples teste de ajax</h1>
+<p>qualquer coisa aqui</p>

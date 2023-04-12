@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title> 16- Método array.find array.findIndex </title>
+</head>
+<body>
+    <h1> 16 - Método array.find e array.findIndex </h1>
+
+    <script>
+        const data = [
+        {
+            nome: 'Willian',
+            idade: 29,
+            cidade: 'Dublin'
+        },
+        {
+            nome: 'Jonas',
+            idade: 22, 
+            cidade: 'Cologne'
+        }
+    ]
+    const simplearray = [4, -5, 0]
+
+    var underzero = simplearray.find(x => x <= 0) /* busca o valor */
+    var underzeroIndex = simplearray.findIndex(x => x <= 0) /* busca o index */
+
+    console.log(underzero)
+    console.log(underzeroIndex)
+
+    const will = data.find( will => will.nome === "Willian")
+    console.log(will)
+    // const willIndex = data.findIndex( willIndex => willIndex.nome === "Willian")
+    // console.log(willIndex)
+
+    </script> 
+</body>
+</html>

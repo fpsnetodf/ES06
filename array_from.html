@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01 - Array from </title>
+</head>
+<body>
+    <h1>01 - Array From </h1>
+    <ul id="list">
+        <li>Francisco</li>
+        <li>Paulo</li>
+        <li>Neto</li>
+    </ul>
+    <script>
+        var data = {
+            nome : "Francisco",
+            sobrenome : "Paulo da silva neto",
+            idade : 49,            
+        }
+        const {nome, idade } = data
+        console.log(`Meu nome é ${nome} e tenho ${idade} anos`) 
+        //const text = 'Francisco Paulo'
+        //console.log(Array.from(text))
+        const list = document.querySelectorAll('#list li')
+        const nomes = Array.from(list)
+        console.log(nomes)
+        const n = nomes.filter(nome => nome ==='Neto')
+        console.log(n)
+    </script>
+</body>
+</html>

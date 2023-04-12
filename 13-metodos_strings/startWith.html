@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03 - Novos métodos para strings</title>
+</head>
+<body>
+    <h1>03 - Novos métodos para strings - startsWith</h1>
+    <p id="test"></p>
+    <p>o texto acima começa com 'rem' contando a partir do indice 2? </p>
+
+    <script>
+        let text = 'Lorem ipsum dolor sit amet'
+        document.querySelector('#test').innerHTML = text
+        console.log(text.startsWith('rem', 2))
+    </script>
+</body>
+</html>

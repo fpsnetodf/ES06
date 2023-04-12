@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14 - Array.from </title>
+</head>
+<body>
+    <h1>14 - Array.from </h1>
+    <ul id="lista">
+        <li>Willina</li>
+        <li>Francisco</li>
+        <li>Alanna</li>
+        <li>Junior</li>
+    </ul>
+
+
+    <script>
+        /* const text = 'Willian'
+
+        console.log(Array.from(text)) */
+
+        const nomes = document.querySelectorAll('#lista li')
+        // console.log(nomes)
+        const nome = Array.from(nomes)
+        console.log(nome.map((n)=> n.textContent ))
+    </script>
+</body>
+</html>
